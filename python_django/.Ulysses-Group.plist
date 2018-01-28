@@ -5,12 +5,79 @@
 	<key>resolutionData</key>
 	<dict>
 		<key>sheetClusters</key>
-		<dict/>
+		<dict>
+			<key>Introduction.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>538865548.89750099</real>
+				<key>version</key>
+				<dict>
+					<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
+					<integer>9</integer>
+				</dict>
+			</dict>
+			<key>part_four.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>538865697.96568894</real>
+				<key>version</key>
+				<dict>
+					<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
+					<integer>26</integer>
+				</dict>
+			</dict>
+			<key>part_one.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>538865709.53021502</real>
+				<key>version</key>
+				<dict>
+					<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
+					<integer>29</integer>
+				</dict>
+			</dict>
+			<key>part_three.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>538865704.53641999</real>
+				<key>version</key>
+				<dict>
+					<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
+					<integer>28</integer>
+				</dict>
+			</dict>
+			<key>part_two.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>538865700.98212194</real>
+				<key>version</key>
+				<dict>
+					<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
+					<integer>27</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>sheetOrder</key>
 		<real>538864229.84246898</real>
 	</dict>
 	<key>sheetClusters</key>
-	<array/>
+	<array>
+		<array>
+			<string>part_four.md</string>
+		</array>
+		<array>
+			<string>Introduction.md</string>
+		</array>
+		<array>
+			<string>part_two.md</string>
+		</array>
+		<array>
+			<string>part_three.md</string>
+		</array>
+		<array>
+			<string>part_one.md</string>
+		</array>
+	</array>
 	<key>sheetOrder</key>
 	<string>creationDate</string>
 	<key>storeFormatVersion</key>
@@ -20,7 +87,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>429aba878960603f42a513db9a04895491e5c520924f97339fc49bac5f540c50</key>
-			<integer>7</integer>
+			<integer>29</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

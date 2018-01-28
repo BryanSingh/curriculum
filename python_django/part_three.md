@@ -52,3 +52,22 @@ $ python manage.py startapp bookshelf
 |   ├── admin.py
 |   ├── apps.py
 ```
+
+### Settings.py
+Before we create our first app for our project, we need to add out newly created app to the __settings.py__ file.  This file contains all of the semantics of our Django application. Look for the section called **INSTALLED__APPS**, this is how we can include other libraries inside of our project (If you are familiar with Rails, this is similar to a Gemfile.)
+
+Every time we create a new app for a project, you will need to add the app name to the *settings.py* file. Your newly edited *settings.py* file should look something like this.
+
+~ python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'bookshelf'
+]
+
+
+
