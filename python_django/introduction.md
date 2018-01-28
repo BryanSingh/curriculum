@@ -1,7 +1,7 @@
 # Python Django (Web-Framework)
 ## Scenario
-Let's set up our situation. You are a Fullstack contractor, you get hired by a up and comming start up. They hire you to build our their Web Application (Webapp), you are given full control on development. You get to choose:
-* Programming Lanuage Framework
+Let's set up our situation. You are a Fullstack contractor, you get hired by a up and coming start up. They hire you to build our their Web Application (Webapp), you are given full control on development. You get to choose:
+* Programming Language Framework
 * Database
 * Hosting
 
@@ -18,3 +18,4 @@ The writer of this tutorial is a big advocate of Sublime Text, but we do not dis
 ### Prerequisites
 No information about Django is required before taking this course.
 * Basic Python Knowledge
+* Eagerness to learn

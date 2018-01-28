@@ -1,4 +1,3 @@
-# Part One
 ## Lets Begin!
 
 ## What is Django?
