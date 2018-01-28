@@ -32,7 +32,7 @@ pass
 `
 We will first create the Author model.
 
-``` python
+```python
 `  from django.db import models
 
   class Book(models.Model):
@@ -44,4 +44,5 @@ last_name = models.CharField(max_length=100)
 city = models.CharField(max_length=100)
 state = models.CharField(max_length=100)
 country = models.CharField(max_length=100)
-````
+```
+`
