@@ -11,7 +11,7 @@ The Model is how the app talks to the database. In this case our database will b
 
 A database consists of tables, tables correlate to app model classes. Every newly created is a child of the parent class, Model.
 
-``` python
+```python
 from django.db import models
 ```
 
@@ -20,14 +20,14 @@ Lets create our for table (class). Since our first app is our bookshelf, a way t
 
 Here, we create the bare bone layout of our models.
 
-``` python
+```python
 from django.db import models
 
-  class Book(models.Model):
-pass
-
   class Author(models.Model):
-pass
+    pass
+
+  class Book(models.Model):
+    pass
 ```
 
 We will first create the Author model.
@@ -35,13 +35,28 @@ We will first create the Author model.
 ```python
 from django.db import models
 
-  class Book(models.Model):
-pass
-
   class Author(models.Model):
-first_name = models.CharField(max_length=100)
-last_name = models.CharField(max_length=100)
-city = models.CharField(max_length=100)
-state = models.CharField(max_length=100)
-country = models.CharField(max_length=100)
+    pass
+
+  class Book(models.Model):
+    pass
 ```
+
+
+We just added attributes to our tables. Every **Author** will have a first\_name, last\_name, city, state, and country. Now we will go ahead and define our **Book** class/table.
+
+```python
+class Author(models.Model):
+  first_name = models.CharField(max_length=100)
+  last_name = models.CharField(max_length=100)
+  city = models.CharField(max_length=100)
+  state = models.CharField(max_length=100)
+  country = models.CharField(max_length=100)
+
+class Book(models.Model):
+  title = models.CharField(max_length=100)
+  publisher = models.CharField(max_length=100)
+  author = models.ForiegnKey(Author)
+
+```
+
