@@ -15,7 +15,7 @@ A database consists of tables, tables correlate to app model classes. Every newl
 from django.db import models
 ```
 
-Lets create our for table (class). Since our first app is our bookshelf, a way to display the contents of our system. We need to define two new classes, a **Book** class and a ** Author** class. Where every author has many books (a one-to-many) relationship.
+Lets create our for table (class). Since our first app is our bookshelf, a way to display the contents of our system. We need to define two new classes, a **Book** class and a **Author** class. Where every author has many books (a one-to-many) relationship.
 
 
 Here, we create the bare bone layout of our models.
@@ -43,8 +43,15 @@ from django.db import models
 ```
 
 
-We just added attributes to our tables. Every **Author** will have a first\_name, last\_name, city, state, and country. Now we will go ahead and define our **Book** class/table.
+We just added attributes to our tables. Every **Author** will have a:
 
+* First Name
+* Last Name
+* City
+* State
+* Country
+
+Now we will go ahead and define our **Boook** class/table.
 ```python
 class Author(models.Model):
   first_name = models.CharField(max_length=100)
@@ -60,3 +67,8 @@ class Book(models.Model):
 
 ```
 
+
+Now, our **Book** class is finished. Every **Book** will have a:
+* Title
+* Publisher
+* Author
