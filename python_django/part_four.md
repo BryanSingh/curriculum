@@ -100,3 +100,33 @@ class Book(models.Model):
   def __str__(self):
     return "{} {}".format(self.title, self.author)
 ```
+The __str__ method, returns the specified object attributes in unicode. You can pass whichever model-class attribute you want to the method.
+
+```python
+class Author(models.Model):
+  first_name = models.CharField(max_length=100)
+  last_name = models.CharField(max_length=100)
+  city = models.CharField(max_length=100)
+  state = models.CharField(max_length=100)
+  country = models.CharField(max_length=100)
+
+  class Meta:
+    ordering = ['last_name']
+
+  def __str__(self):
+    return "{} {}".format(self.last_name, self.first_name)
+
+class Book(models.Model):
+  title = models.CharField(max_length=100)
+  publisher = models.CharField(max_length=100)
+  author = models.ForiegnKey(Author)
+
+  class Meta:
+    ordering = ['last_name']
+
+
+  def __str__(self):
+    return "{} {}".format(self.title, self.author)
+```
+
+The sub-class __Meta__ allows us to order the records of the table in the desired way.
