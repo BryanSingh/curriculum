@@ -130,3 +130,12 @@ class Book(models.Model):
 ```
 
 The sub-class __Meta__ allows us to order the records of the table in the desired way.
+
+### Quick Review
+
+We have defiend two models:
+* Author
+* Book
+Author as 5 attributes (see above), Book has 3 attributes (see above). The major distinction between these two classes, is the **ForeignKey** attribute. By putting th **ForeignKey** in the **Book** attribute, the **PrimaryKey** is added to the **Author** model, because we passed in the model paramater.
+
+A model is a class that is defined in the *models.py*, a model is a table in the database. Every model inherits from the parent class **Model**
