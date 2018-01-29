@@ -63,7 +63,7 @@ class Author(models.Model):
 class Book(models.Model):
   title = models.CharField(max_length=100)
   publisher = models.CharField(max_length=100)
-  author = models.ForiegnKey(Author)
+  author = models.ForiegnKey(Autho, on_delete=models.CASCADEr)
 
 ```
 
@@ -72,3 +72,9 @@ Now, our **Book** class is finished. Every **Book** will have a:
 * Title
 * Publisher
 * Author
+
+### Class Attributes explination
+* CharField: Ment for string
+* max\_length: The limit for the number of characters the attribute can have
+* ForeignKey: Creates the one-to-many relationship (Between an **Author** and a **Book**)
+* on\_delete: Sets the deletion of the record, to delete all the records with the foreign key, to be removed
