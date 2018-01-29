@@ -74,7 +74,29 @@ Now, our **Book** class is finished. Every **Book** will have a:
 * Author
 
 ### Class Attributes explination
-* CharField: Ment for string
-* max\_length: The limit for the number of characters the attribute can have
-* ForeignKey: Creates the one-to-many relationship (Between an **Author** and a **Book**)
-* on\_delete: Sets the deletion of the record, to delete all the records with the foreign key, to be removed
+* __CharField__: Ment for string
+* __max\_length__: The limit for the number of characters the attribute can have
+* __ForeignKey__: Creates the one-to-many relationship (Between an **Author** and a **Book**)
+* __on\_delete__: Sets the deletion of the record, to delete all the records with the foreign key, to be removed
+
+### Adding Object Information
+
+```python
+class Author(models.Model):
+  first_name = models.CharField(max_length=100)
+  last_name = models.CharField(max_length=100)
+  city = models.CharField(max_length=100)
+  state = models.CharField(max_length=100)
+  country = models.CharField(max_length=100)
+
+  def __str__(self):
+    return "{} {}".format(self.last_name, self.first_name)
+
+class Book(models.Model):
+  title = models.CharField(max_length=100)
+  publisher = models.CharField(max_length=100)
+  author = models.ForiegnKey(Author)
+
+  def __str__(self):
+    return "{} {}".format(self.title, self.author)
+```
